@@ -13,9 +13,9 @@ function Home() {
         console.log('Video API response:', res.data);
 
         if (Array.isArray(res.data)) {
-          setVideos(res.data.slice(0, 10));
+          setVideos(res.data.slice(0, 12));
         } else if (Array.isArray(res.data.videos)) {
-          setVideos(res.data.videos.slice(0, 10));
+          setVideos(res.data.videos.slice(0, 12));
         }
         else {
           setVideos([]);
